@@ -1,0 +1,9 @@
+{% extends './base.html' %}
+{% block content %}
+
+{% for request in request_list %}
+    <h2>{{ request.method }} {{ request.path }}</h2>
+    <p>{{ request.user_agent }}</p>
+
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends './base.html' %}
+{% block content %}
+    <a href="{% url "book_add" %}">
+        <button type="button" class="btn btn-primary">add new book</button>
+    </a>
+
+    {% for book in book_list %}
+        <h2><a href="{% url "book_detail" pk=book.id %}">{{ book.title }}</a></h2>
+        <a href="{% url "book_edit" pk=book.id %}">
+            <button type="button" class="btn btn-primary">Edit</button>
+        </a>
+        <p class="bg-info">
+            <strong>Price</strong>: {{ book.price }}
+        </p>
+        <p class="bg-info">
+            <strong>ISBN</strong>: {{ book.ISBN }}
+        </p>
+
+    {% for author in  book.authors.all%}
+        Author:
+        {{ author.first_name }}
+        {{ author.last_name }}
+        {% endfor %}
+        {% endfor %}
+{% endblock %}

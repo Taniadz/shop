@@ -1,0 +1,83 @@
+[{
+    "model": "books.author",
+    "pk": 1,
+    "fields": {
+      "first_name": "Alan",
+      "last_name": "Bernheimer"
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 2,
+    "fields": {
+      "first_name": "Leigh",
+      "last_name": "Bardugo"
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 3,
+    "fields": {
+      "first_name": "Neil",
+      "last_name": "Gaiman"
+    }
+  },
+  {
+    "model": "books.author",
+    "pk": 4,
+    "fields": {
+      "first_name": "Terry",
+      "last_name": "Pratchett"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 1,
+    "fields": {
+      "title": "Cafe Isotope",
+      "price": "15.5",
+      "authors": [1],
+      "ISBN": "JJHS7866GGG"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 2,
+    "fields": {
+      "title": "King of Scars",
+      "price": "17.5",
+      "authors": [2],
+      "ISBN": "9781250142283"
+    }
+  },
+   {
+    "model": "books.book",
+    "pk": 3,
+    "fields": {
+      "title": "Six of Crows",
+      "price": "10.5",
+      "authors":[2],
+      "ISBN": "9781627792127"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 4,
+    "fields": {
+      "title": "American Gods",
+      "price": "5.5",
+      "authors": [3],
+      "ISBN": "9780380789030"
+    }
+  },
+  {
+    "model": "books.book",
+    "pk": 5,
+    "fields": {
+      "title": "Good Omens: The Nice & Accurate Prophecies of Agnes Nutter Witch",
+      "price": "5.5",
+      "authors": [3, 4],
+      "ISBN": "97803807897030"
+    }
+  }
+]

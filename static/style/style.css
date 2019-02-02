@@ -1,0 +1,25 @@
+html, body {
+    height: 100%;
+}
+.book-form input {
+    width: 100%;
+    min-height: 64px;
+}
+
+.content {
+    min-height: 100%;
+    margin-bottom: -48px;
+}
+.content:after {
+    content: "";
+    display: block;
+    height: 48px;
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    min-height: 48px;
+    color: white;
+    text-align: center;
+}
