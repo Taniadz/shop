@@ -8,3 +8,8 @@ Project has info logging of books manipulations: create/edit/delete
 
 There is possibility to save all http requests to database and display 10 last of then on
 the separate page /requests in the project. 
+
+
+Only authenticated users(in admin page) may create and edit books.
+
+Unauthenticated requests have full read-only access.

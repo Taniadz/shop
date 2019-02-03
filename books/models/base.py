@@ -1,9 +1,9 @@
 from django.db import models
-from datetime import datetime
+from django.utils import timezone
 
 
 class BaseModel(models.Model):
-    created = models.DateTimeField(default=datetime.now, blank=True)
+    created = models.DateTimeField(default=timezone.now, blank=True)
     changed = models.DateTimeField(auto_now=True, null=True)
 
     class Meta:

@@ -1,4 +1,3 @@
-from datetime import datetime
 from django.db import models
 from .base import BaseModel
 from django.urls import reverse
@@ -16,7 +15,4 @@ class Book(BaseModel):
         return reverse('book_detail', kwargs={'pk': self.pk})
 
     def __str__(self):
-        return '%s %s Price: %s' % (self.title, self.ISBN, self.price)
-
-    def __unicode__(self):
         return '%s %s Price: %s' % (self.title, self.ISBN, self.price)
